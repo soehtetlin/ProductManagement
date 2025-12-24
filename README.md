@@ -67,7 +67,3 @@ Open the `appsettings.json` file in the project solution and ensure the connecti
 2. Restore NuGet packages (it should happen automatically).
 3. Press **F5** or click the **Run** button (Green Play Icon).
 4. Navigate to the Product page (e.g., `https://localhost:xxxx/Product`) to test the CRUD operations.
-
-```
-
-```
