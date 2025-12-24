@@ -13,7 +13,8 @@ namespace ProductManagementApp.Controllers
         // Constructor: Injects configuration to access the connection string
         public ProductController(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration.GetConnectionString("DefaultConnection")
+                    ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
         }
 
         /// <summary>
